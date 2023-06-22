@@ -41,10 +41,10 @@ long long MaxPairwiseProductFast(vector<int> &vect)
 
 int main()
 {
-    //stress test
+    // stress test
     while (true)
     {
-        int n = rand() %100000  + 2;
+        int n = rand() % 100000 + 2;
         cout << n << "\n";
         vector<int> a;
         for (int i = 0; i < n; ++i)
