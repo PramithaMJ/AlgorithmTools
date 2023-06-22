@@ -3,9 +3,9 @@
 
 using namespace std;
 
-int maxPairProduct(vector<int>& vect) // Pass the vector by reference to avoid unnecessary copying
+long long maxPairProduct(vector<long long>& vect) // Pass the vector by reference to avoid unnecessary copying
 {
-    int result = 0;
+    long long result = 0;
 
     for (int i = 0; i < vect.size() - 1; i++) 
         for (int j = i + 1; j < vect.size(); j++) 
@@ -24,7 +24,7 @@ int main()
     cout << "Enter the input number size: ";
     cin >> n;
 
-    vector<int> vect(n);
+    vector<long long> vect(n);
 
     for (int i = 0; i < n; i++)
     {
