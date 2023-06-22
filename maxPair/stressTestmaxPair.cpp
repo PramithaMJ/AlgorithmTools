@@ -33,7 +33,7 @@ long long MaxPairwiseProductFast(vector<int> &vect)
     int max_index2 = -1;
     for (int j = 0; j < n; ++j)
     {
-        if ((vect[j] != vect[max_index1]) && (max_index2 == -1) || (vect[j] > vect[max_index2]))
+        if ((j != max_index1) && (max_index2 == -1) || (vect[j] > vect[max_index2]))
             max_index2 = j;
     }
     return ((long long)(vect[max_index1])) * vect[max_index2];
